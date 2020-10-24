@@ -1,4 +1,4 @@
-// Write a function which, if the h2 element  has the class "header",
+// 1 - Write a function which, if the h2 element  has the class "header",
 // it will be removed; otherwise the class "toogleHeader" is added.
 
 const toggleClass = () => {};
