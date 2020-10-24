@@ -31,7 +31,7 @@ const backgroundList = () => {
 
 backgroundList();
 
-// 5- Create a new li element , give it the text 'project and abbend it to the fisrtList .
+// 5- Create a new li element , give it the text 'project and append it to the fisrtList .
 const newList = () => {
   let newLi = document.createElement("li");
 
@@ -41,7 +41,7 @@ const newList = () => {
 };
 newList();
 
-// 6 - Loop over all of the lis inside the secondList and give them a background color of "green".
+// 6 - Loop over all of the li elements inside the secondList and give them a background color of "green".
 const brownColor = () => {
   let liInsidesecondList = document.querySelectorAll(".secondList li");
   for (let i = 0; i < liInsidesecondList.length; i++) {
