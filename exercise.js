@@ -1,25 +1,27 @@
-// const toggleClass = () =>{
-//   document.querySelector(".header").classList.toggle("toogleHeader");
-// };
-// toggleClass(); //uncomment me to test
+// 1 - Write a function which, if the h2 element  has the class "header",
+// it will be removed; otherwise the class "toogleHeader" is added.
+
+const toggleClass = () => {
+  document.querySelector(".header").classList.toggle("toogleHeader");
+};
+toggleClass(); //uncomment me to test
 
 // 2- Select the section with an id of container without using querySelector,
 // and style the font with blue color
-// const containerstyle = () => {
-//   document.getElementById("container").style.color = "blue";
-// };
-// containerstyle(); //uncomment me to test
 
-// 3 - Select the nav with a class of "firstNav" and style the font with fontsize =20px.
-
-const italicSize = () => {
-  document.getElementsByClassName("firstNav")[0].style.fontStyle = "italic";
+const styleContainer = () => {
+  document.getElementById("container").style.color = "blue";
 };
-italicSize();
+styleContainer(); //uncomment me to test
 
-// OR
+// 3 - Select the nav with a class of "firstNav" and style the font with italic fontStyle.
 
-// document.querySelectorAll(".firstNav")
+const styleItalic = () => {
+  document.getElementsByClassName("firstNav")[0].style.fontStyle = "italic";
+  // OR
+  // document.querySelectorAll(".firstNav")
+};
+styleItalic(); //uncomment me to test
 
 // 4 - Select a list item with a class of 'contact', but only the list item inside of the secondList nav,
 // and style it with background color yellow
@@ -29,7 +31,7 @@ const backgroundList = () => {
     "yellow";
 };
 
-backgroundList();
+backgroundList(); //uncomment me to test
 
 // 5- Create a new li element , give it the text 'project and append it to the fisrtList .
 const newList = () => {
@@ -39,27 +41,27 @@ const newList = () => {
 
   document.querySelector(".firstNav").appendChild(newLi);
 };
-newList();
+newList(); //uncomment me to test
 
 // 6 - Loop over all of the li elements inside the secondList and give them a background color of "green".
 const brownColor = () => {
-  let liInsidesecondList = document.querySelectorAll(".secondList li");
-  for (let i = 0; i < liInsidesecondList.length; i++) {
-    liInsidesecondList[i].style.color = "brown";
+  let lists = document.querySelectorAll(".secondList li");
+  for (let i = 0; i < lists.length; i++) {
+    lists[i].style.color = "brown";
   }
 };
-brownColor();
+brownColor(); //uncomment me to test
 
-// 7- Create p eleement with any text and abbend it to the footer
-const footer = () => {
+// 7- Create p eleement with any text and append it to the footer
+const addFooter = () => {
   let p = document.createElement("p");
-  p.innerText = "kkkkk";
+  p.innerText = "Footer";
   document.querySelector(".footer").appendChild(p);
 };
-footer();
+addFooter(); //uncomment me to test
+
 // 8- Remove the div with a class of footer.
 const removeFooter = () => {
-  let footer = document.querySelector(".footer");
-  footer.remove();
+  let footer = document.querySelector(".footer").remove();
 };
-removeFooter();
+removeFooter(); //uncomment me to test
