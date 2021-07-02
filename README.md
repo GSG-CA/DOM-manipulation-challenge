@@ -15,4 +15,4 @@ It's something implemented by web browsers rather than provided by the JavaScrip
 
 In your browser, if you _right-click_ on a page, you see _inspect element_.
 
-![inpect element](./assest/inspect.png)
+![inspect element](./assets/inspect.png)
