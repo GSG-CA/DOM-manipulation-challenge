@@ -3,7 +3,7 @@ Write a function which, if the 'h2' element  has the class "header",
 it will be removed; otherwise the class "header" is added.
 */
 const toggleClass = () => {
-  document.querySelector(".header").classList.toggle("header");
+  document.querySelector("h2").classList.toggle("header");
 };
 toggleClass(); //uncomment me to test
 
